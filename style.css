@@ -38,9 +38,14 @@ body {
 }
 
 .flexible {
-    transform: translate(50px, -80px);
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    bottom: 50px;
+    margin-bottom: -50px;
 }
 
 .box {
@@ -67,7 +72,19 @@ body {
     width: 40%;
 }
 
-.botton-text {
-    text-align: center;
+.bottom-text,
+.bottom-text a {
     color: white;
+}
+
+.bottom-text {
+    text-align: center;
+}
+
+.bottom-text a {
+    text-decoration: none;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
 }
